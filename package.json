@@ -1,0 +1,19 @@
+{
+  "name": "assign3-css-precomiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "goservgo": "lite-server --baseDir=\"public\"",
+    "imawesome": "sass --watch src/scss:public/assets/css",
+    "start": "concurrently \"npm run imawesome\" \"npm run goservgo\""
+  },
+  "author": "Marina Dela Paz",
+  "license": "private",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "lite-server": "^2.6.1",
+    "sass": "^1.69.3"
+  }
+}
